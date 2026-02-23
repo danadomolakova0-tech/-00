@@ -4,33 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Домолакова Дана | Портфолио</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Шрифт Colette -->
+    <link href="https://fonts.googleapis.com/css2?family=Baron&display=swap" rel="stylesheet">
+
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Baron', 'Intro', sans-serif;
         }
 
         body {
             display: flex;
             min-height: 100vh;
-            background: #0f0f0f;
+            background: linear-gradient(160deg, #1a001a, #e6007e); /* қара-қызғылтқа градиент */
             color: #eee;
         }
 
-        /* Сол жақ панель */
         .sidebar {
             width: 320px;
-            background: linear-gradient(160deg, #000000, #1a0000);
-            color: white;
+            background: linear-gradient(160deg, #000000, #660033); /* қара-қызғылтқа */
             padding: 40px 25px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            box-shadow: 5px 0 20px rgba(0,0,0,0.6);
-            border-right: 1px solid #330000;
+            border-right: 1px solid #990066;
         }
 
         .profile {
@@ -38,23 +38,17 @@
         }
 
             .profile img {
-                <img src="https://chatgpt.com/backend-api/estuary/content?id=file_000000007ca471fd96df9b7619975166&amp;ts=492176&amp;p=fs&amp;cid=1&amp;sig=a5e1d4e28fafd7adb49cfef8f4df6d45fc8e85fee1d6b6cb0184dbed6a5865b3&amp;v=0" alt="Uploaded image"/> width: 130px;
+                width: 130px;
                 height: 130px;
                 border-radius: 50%;
                 object-fit: cover;
-                border: 3px solid #ff2a2a;
+                border: 3px solid #e6007e;
                 margin-bottom: 15px;
             }
 
             .profile h1 {
+                color: #e6007e;
                 font-size: 22px;
-                margin-bottom: 5px;
-                color: #ff2a2a;
-            }
-
-            .profile p {
-                font-size: 14px;
-                opacity: 0.9;
             }
 
         .info {
@@ -62,45 +56,34 @@
         }
 
             .info h3 {
+                color: #e6007e;
                 margin-bottom: 10px;
-                font-weight: 600;
-                font-size: 16px;
-                border-bottom: 1px solid rgba(255,255,255,0.2);
-                padding-bottom: 5px;
-                color: #ff2a2a;
             }
 
             .info p {
                 font-size: 14px;
-                margin-bottom: 10px;
-                line-height: 1.5;
+                margin-bottom: 8px;
             }
 
-        .social {
-            margin-top: 20px;
+        .social a {
+            display: inline-block;
+            margin: 5px;
+            background: #e6007e;
+            padding: 8px 14px;
+            border-radius: 8px;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
         }
 
-            .social a {
-                display: inline-block;
-                margin-right: 10px;
-                text-decoration: none;
-                color: white;
-                background: #ff2a2a;
-                padding: 8px 14px;
-                border-radius: 8px;
-                transition: 0.3s;
-                font-size: 14px;
+            .social a:hover {
+                background: #99004d;
             }
 
-                .social a:hover {
-                    background: #cc0000;
-                }
-
-        /* Оң жақ контент */
         .content {
             flex: 1;
             padding: 40px;
-            background: #121212;
+            background: #1a001a;
         }
 
         .section {
@@ -108,23 +91,8 @@
         }
 
             .section h2 {
-                color: #ff2a2a;
+                color: #e6007e;
                 margin-bottom: 15px;
-            }
-
-        .card {
-            background: #1c1c1c;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.5);
-            margin-bottom: 20px;
-            transition: 0.3s;
-            border: 1px solid #2a0000;
-        }
-
-            .card:hover {
-                transform: translateY(-5px);
-                border-color: #ff2a2a;
             }
 
         .portfolio-grid {
@@ -133,23 +101,31 @@
             gap: 20px;
         }
 
-        .portfolio-item {
-            background: #2a0000;
-            height: 150px;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 600;
-            color: #ff2a2a;
-            border: 1px solid #3a0000;
+            .portfolio-grid img {
+                width: 100%;
+                height: 150px;
+                object-fit: cover;
+                border-radius: 12px;
+                border: 1px solid #660033;
+                transition: 0.3s;
+            }
+
+                .portfolio-grid img:hover {
+                    transform: scale(1.05);
+                }
+
+        .card {
+            background: #33001a;
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid #660033;
         }
 
         footer {
             text-align: center;
-            margin-top: 50px;
-            color: #777;
             font-size: 13px;
+            color: #777;
+            margin-top: 20px;
         }
 
         @media (max-width: 900px) {
@@ -159,19 +135,15 @@
 
             .sidebar {
                 width: 100%;
-                flex-direction: column;
-                align-items: center;
             }
         }
     </style>
 </head>
-<body>
 
-    <!-- Сол жақ ақпарат -->
+<body>
     <aside class="sidebar">
         <div>
             <div class="profile">
-                <!-- Фото -->
                 <img src="photo.jpg" alt="Dana">
                 <h1>Домолакова Дана</h1>
                 <p>Дизайнер студент</p>
@@ -179,67 +151,61 @@
 
             <div class="info">
                 <h3>Мен туралы</h3>
-                <p>
-                    Мен — дизайнер мамандығында оқитын шығармашылық студентпін.
-                    Графикалық дизайн, иллюстрация және визуалды эстетикаға қызығамын.
-                    Мақсатым — ерекше әрі стильді жобалар жасау.
-                </p>
+                <p>Мен — дизайнер мамандығында оқитын шығармашылық студентпін.</p>
+                <p>Графикалық дизайн және иллюстрацияға қызығамын.</p>
 
                 <h3>Дағдылар</h3>
-                <p>• Adobe Photoshop</p>
-                <p>• Adobe Illustrator</p>
-                <p>• CorelDRAW</p>
-                <p>• Сурет салу</p>
+                <p>Adobe Photoshop</p>
+                <p>Adobe Illustrator</p>
+                <p>CorelDRAW</p>
 
                 <h3>Байланыс</h3>
-                <p>Email: example@mail.com</p>
-                <p>Телефон: +7 777 000 00 00</p>
+                <p>Email: danadomolakova0@gmail.com</p>
+                <p>Телефон: 87027188288</p>
             </div>
 
             <div class="social">
-                <a href="#">Instagram</a>
-                <a href="#">WhatsApp</a>
+                <a href="https://instagram.com/_a.dant_0_" target="_blank">Instagram</a>
+                <a href="https://wa.me/87027188288" target="_blank">WhatsApp</a>
             </div>
         </div>
 
-        <footer>
-            © 2026 Dana Portfolio
-        </footer>
+        <footer>© 2026 Dana Portfolio</footer>
     </aside>
 
-    <!-- Оң жақ контент -->
     <main class="content">
-
         <section class="section">
             <h2>Портфолио</h2>
             <div class="portfolio-grid">
-                <div class="portfolio-item">Жоба 1</div>
-                <div class="portfolio-item">Жоба 2</div>
-                <div class="portfolio-item">Жоба 3</div>
-                <div class="portfolio-item">Жоба 4</div>
+                <img src="project1.jpg" alt="">
+                <img src="project2.jpg" alt="">
+                <img src="project3.jpg" alt="">
+                <img src="project4.jpg" alt="">
             </div>
         </section>
 
         <section class="section">
             <h2>Тәжірибе</h2>
             <div class="card">
-                <h3>Дизайн практика</h3>
-                <p>
-                    Логотиптер жасау, брендбук дайындау және графикалық бағдарламалармен жұмыс тәжірибесі бар.
-                </p>
+                <p>2024</p>
+                <p>Дизайнер-помощник</p>
+                <p>Проходила производственную практику в компании Aevent.kz</p>
+                <p>2025</p>
+                <p>Преподаватель рисования</p>
+                <p>Частная Арт школа "Ерке Сылқым"</p> 
+                <p>Логотиптер жасау, брендбук дайындау және графикалық бағдарламалармен жұмыс тәжірибесі бар.</p>
             </div>
         </section>
 
         <section class="section">
             <h2>Мақсаттар</h2>
             <div class="card">
-                <p>
-                    Болашақта кәсіби дизайнер болып, халықаралық деңгейдегі жобаларға қатысқым келеді.
-                </p>
+                Менің басты мақсатым — кәсіби дизайнер ретінде дамып, шығармашылық жобаларды халықаралық деңгейде жүзеге асыру.
+                Болашақта өз брендімді ашып, графикалық дизайн, иллюстрация және интерьер дизайны саласында инновациялық шешімдер ұсынғым келеді.
+                Сонымен қатар, заманауи технологияларды үйреніп, креативті құралдар арқылы визуалды әлемді әдемі әрі қызықты етуге ұмтыламын.
+                Мен әр жобам арқылы адамдарға шабыт беретін, көркемдік пен практикалық шешімдерді біріктіретін дизайнер болғым келеді.
             </div>
         </section>
-
     </main>
-
 </body>
 </html>
